@@ -46,7 +46,7 @@ header h1 {
 
 #intro > h3,
 h4 {
-  top: 35vh;
+  top: 30vh;
   position: absolute;
   color: rgb(255, 0, 0);
   font-size: 2rem;
@@ -55,7 +55,7 @@ h4 {
 }
 
 #intro > hr {
-  top: 36vh;
+  top: 31vh;
   height: 5px;
   position: absolute;
   background-color: rgb(255, 0, 0);
@@ -454,7 +454,7 @@ section {
 
 .pj {
   width: 100%;
-  height: 700px;
+  height: 800px;
   margin: 0px auto;
   text-align: center;
   position: relative;
@@ -478,87 +478,104 @@ section {
   padding: 200px 0px;
 }
 
-#project_l, #project_r {
+#project_l,
+#project_r {
   width: 90%;
   margin: 0px 5%;
 }
 
-#project_l article {
+#project_l article,
+#project_r article {
   width: 100%;
   height: 500px;
   position: relative;
 }
 
-.prj_l_img {
+.prj_l_img,
+.prj_r_img {
   top: 0px;
-  left: 0px;
   position: absolute;
   display: inline-block;
-  overflow: hidden;
-  width: 50%;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
 }
 
+.prj_l_img {
+  left: 50px;
+}
+
+.prj_r_img {
+  right: 50px;
+}
+
+.prj_r_img > img,
 .prj_l_img > img {
-  width: 80%;
+  width: 100%;
+  height: auto;
 }
 
 .hover-video {
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 100px;
+  transform: scale(1);
+  opacity: 0;
+  z-index: 9999;
+  transform: translate(0%, -100px);
 }
 
 .prj_l_img > .hover-video {
-  position: absolute;
-  top: 100px;
   left: 0;
-  transform: scale(1);
-  opacity: 0;
 }
 
-.hover-video.active {
-  transform: scale(1.2);
-  opacity: 1;
+.prj_r_img > .hover-video {
+  right: 0;
 }
 
-.prj_l_img:hover .default-video {
-  transform: scale(1);
-}
-
-.prj_l_img:hover .hover-video {
-  opacity: 1;
+.prj_l_txt,
+.prj_r_txt {
+  width: 500px;
+  position: absolute;
 }
 
 .prj_l_txt {
-  width: 500px;
   margin: 150px 50px 0px 0px;
-  position: absolute;
   right: 0px;
 }
 
-.prj_l_txt h3 {
+.prj_r_txt {
+  margin: 150px 0px 0px 50px;
+  left: 0px;
+}
+
+.prj_l_txt h3,
+.prj_r_txt h3 {
   font-size: 3rem;
   font-family: "Anta", sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.prj_l_txt p {
+.prj_l_txt p,
+.prj_r_txt p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.prj_l_txt p span {
+.prj_l_txt p span,
+.prj_r_txt p span {
   font-size: 1rem;
 }
 
-.prj_l_unlock {
+.prj_l_unlock,
+.prj_r_unlock {
   width: 100%;
   height: 20px;
   background: #333;
   border-radius: 30px;
 }
 
-#unlock1, #unlock2, #unlock3, #unlock4 {
+.unlock {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -569,73 +586,23 @@ section {
   border-radius: 50%;
 }
 
-#project_r article {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-
-.prj_r_img {
-  top: 0px;
-  right: -100px;
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-}
-
-.prj_r_img > img {
-  width: 80%;
-}
-
-.prj_r_img > .hover-video {
-  position: absolute;
-  top: 100px;
-  right: 80px;
-  transform: scale(1);
-  opacity: 0;
-}
-
-.prj_r_img:hover .default-video {
-  transform: scale(1);
-}
-
-.prj_r_img:hover .hover-video {
-  opacity: 1;
-}
-
-.prj_r_txt {
-  width: 500px;
-  margin: 150px 50px 0px 0px;
-  position: absolute;
-  left: 0px;
-}
-
-.prj_r_txt h3 {
-  font-size: 3rem;
+#contact > h2 {
+  display: block;
+  font-size: 5rem;
   font-family: "Anta", sans-serif;
   font-weight: 400;
-  margin-bottom: 20px;
+  text-align: center;
+  padding: 200px 0px;
 }
 
-.prj_r_txt p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.prj_r_txt p span {
-  font-size: 1rem;
-}
-
-.prj_r_unlock {
-  width: 100%;
-  height: 20px;
-  background: #333;
-  border-radius: 30px;
-}
-
-#contact {
-  font-size: 10rem;
+.contact_txt {
+  font-size: 2rem;
+  line-height: 100px;
   font-family: "Anta", sans-serif;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  height: 500px;
+  margin: 0px auto;
 }
 
 footer {

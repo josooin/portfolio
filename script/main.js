@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 
   // 제목 날아오게 하기
-  $('#intro h2').animate({ 'top': '25%' }, 500, 'swing');
+  $('#intro h2').animate({ 'top': '20%' }, 500, 'swing');
 
   // $('#intro h3').animate({'right':'0%'}, 1000, 'swing');
   $('#intro h3').css({ 'left': '5%' }).hide().fadeIn(2000, 'swing');
@@ -117,7 +117,7 @@ $(document).ready(function () {
   const textArr1 = 'ABOUT-ME ABOUT-ME ABOUT-ME'.split(' ');
   const textArr2 = '조수인 JOSOOIN 趙秀寅 ジョスイン مساعد βοηθός सहायक ასისტენტი помоћник pytyvõhára '.split(' ');
   const textArr3 = '도전정신이 있다. 생산적이고 유능한 사람을 좋아한다. 야망이 넘친다. 단호하게 행동하는 편이다. 비판을 크게 신경 안 쓰며 자신의 성찰 원동력으로 사용한다. 피드백 해 줄 사람을 오히려 찾는다. 효율성을 중요시한다. 시간 낭비에 예민하다. 결과 중심적이다. 완벽주의이다. 지식을 쌓고자 하는 욕구가 많다. 가끔 엉뚱할 때가 있다. 멀어지면 뒤도 안 돌아본다. 감정 표현이 솔직하다. 외향형 중 ENTP 다음으로 가장 내향적이다.'.split(' ');
-  const textArr4 = 'Phone : +82 010-0000-0000 / E-mail : whtndls330@naver.com /'.split(' ');
+  const textArr4 = 'Phone : +82 010-8217-9409 / E-mail : whtndls330@naver.com /'.split(' ');
 
   let count1 = 0;
   let count2 = 0;
@@ -308,52 +308,55 @@ $(document).ready(function () {
 
   // 마우스 오버 시 동영상 재생
   $(document).ready(function () {
-    $(".hover-video").hover(
+    $(".prj_l_img, .prj_r_img").hover(
       function () {
-        $(this).addClass("active").css({ width: "100%", height: "auto", opacity: 1 }).get(0).play();
+        // 마우스 오버 시 동영상 재생 및 크기 조정
+        $(this).find(".hover-video").css({
+          'width': 'auto', // 너비를 자동으로 설정하여 비율 유지
+          'height': '500px', // 높이를 500px로 설정
+          'opacity': '1' // 동영상을 보이게 함
+        }).get(0).play(); // 동영상 재생
       },
       function () {
-        $(this).removeClass("active").css({ width: "100%", height: "auto", opacity: 0 }).get(0).pause().currentTime = 0;
+        // 마우스가 벗어났을 때 동영상 일시 정지 및 원래 크기로 복원
+        $(this).find(".hover-video").css({
+          'width': '500px', // 원래 너비로 설정
+          'height': '500px', // 원래 높이로 설정
+          'opacity': '0' // 동영상을 숨김
+        }).get(0).pause(); // 동영상 일시 정지
       }
     );
   });
 
 
-
-
-  // 프로젝트 이미지 사이트 이동
-  $('#unlock1').draggable({
+  // 밀어서 잠금해제
+  $('.unlock').draggable({
     axis: 'x', // x축으로만 드래그 가능하도록 설정
-    containment: '.prj_l_unlock', // 바깥으로 나가지 않도록 body 영역에 제한
+    containment: 'parent', // 부모 요소 내에서만 드래그 가능하도록 제한
     stop: function (event, ui) {
-      if (ui.position.left >= 200) {
-        window.location.href = 'https://josooin.github.io/cgv/'; // 이동할 웹사이트 주소를 여기에 입력합니다.
+      if (ui.position.left >= 200) { // 드래그된 위치가 200px 이상일 경우
+        var unlockId = $(this).attr('id'); // 현재 드래그된 요소의 ID 가져오기
+        switch (unlockId) {
+          case 'unlock1':
+            window.location.href = 'https://josooin.github.io/cgv/'; // CGV 프로젝트 페이지로 이동
+            break;
+          case 'unlock2':
+            window.location.href = 'http://josooin1.dothome.co.kr/harim/index.html'; // 하림 프로젝트 페이지로 이동
+            break;
+          case 'unlock3':
+            window.location.href = 'http://josooin1.dothome.co.kr/innisfree/index.html'; // 이니스프리 프로젝트 페이지로 이동
+            break;
+          case 'unlock4':
+            // 여기에 unlock4의 목적지 URL을 추가
+            break;
+          // 추가적인 unlock 요소에 대한 case를 여기에 추가할 수 있습니다.
+          default:
+            // 기본 동작 (옵션)
+            break;
+        }
       }
     }
   });
-
-  // 프로젝트 이미지 사이트 이동
-  $('#unlock2').draggable({
-    axis: 'x', // x축으로만 드래그 가능하도록 설정
-    containment: '.prj_l_unlock', // 바깥으로 나가지 않도록 body 영역에 제한
-    stop: function (event, ui) {
-      if (ui.position.left >= 200) {
-        window.location.href = 'http://josooin1.dothome.co.kr/harim/index.html'; // 이동할 웹사이트 주소를 여기에 입력합니다.
-      }
-    }
-  });
-
-  // 프로젝트 이미지 사이트 이동
-  $('#unlock3').draggable({
-    axis: 'x', // x축으로만 드래그 가능하도록 설정
-    containment: '.prj_l_unlock', // 바깥으로 나가지 않도록 body 영역에 제한
-    stop: function (event, ui) {
-      if (ui.position.left >= 200) {
-        window.location.href = 'http://josooin1.dothome.co.kr/innisfree/index.html'; // 이동할 웹사이트 주소를 여기에 입력합니다.
-      }
-    }
-  });
-
 
 
 
