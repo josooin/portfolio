@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description"
+    content="웹 퍼블리셔 포트폴리오입니다. 최신 웹 표준과 접근성 가이드라인을 준수하며, 사용자 경험을 최우선으로 생각하는 웹사이트와 애플리케이션을 개발을 목표로 합니다.">
+  <title>Sooin's Web Portfolio</title>
+
+  <!-- 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 기본서식 -->
+  <link href="./css/base.css" type="text/css" rel="stylesheet">
+
+  <!-- 메인서식 -->
+  <link href="./css/main.css" type="text/css" rel="stylesheet">
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 UI라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+  <!-- 폰트어썸 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <div id="intro">
+      <h2>Design for<br>Web</h2>
+      <h3>Design by<br> Jo</h3>
+      <h4>Portfolio<br> 2024</h4>
+      <hr>
+
+      <div class="int_profile">
+        <p>Jo<br>Sooin</p>
+        <p>Web Designer</p>
+        <hr>
+        <p>UI/UX</p>
+        <p>User Interface / User Experience</p>
+      </div>
+
+      <div class="datentime">
+        <div id="date">123</div>
+        <div id="time"></div>
+      </div>
+    </div>
+
+    <div class="scroll_btn">
+      <!-- <i class="fas fa-mouse"></i> -->
+      <img src="./images/mouse_icon.png" alt="">
+      <br>scroll
+    </div>
+  </header>
+
+  <nav class="gnb">
+    <ul>
+      <li><a href="#" title="profile" class="act2"></a></li>
+      <li><a href="#" title="식음료"></a></li>
+      <li><a href="#" title="여행"></a></li>
+      <li><a href="#" title="뷰티_헬스케어"></a></li>
+      <li><a href="#" title="디자인"></a></li>
+      <li><a href="#" title="나에게 연락하기"></a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <section id="profile">
+      <h2>profile</h2>
+      <div>
+        <div class="cover">
+          <p class="first-parallel"></p>
+        </div>
+        <div class="cover">
+          <p class="second-parallel"></p>
+        </div>
+        <div class="cover">
+          <p class="third-parallel"></p>
+        </div>
+        <div class="cover">
+          <p class="forth-parallel"></p>
+        </div>
+      </div>
+      <article>
+        <h2>profile_img</h2>
+        <div class="prf_img">
+          <div class="flipper">
+            <div class="front">
+              <img src="./images/me1.png" alt="앞면 이미지">
+            </div>
+            <div class="back">
+              <img src="./images/me2.png" alt="뒷면 이미지">
+            </div>
+          </div>
+        </div>
+        <div id="prf_txt"></div>
+      </article>
+
+      <article>
+        <h2>profile_ability</h2>
+        <div class="prf_d_lng">
+          <div class="prf_ability">
+            <img src="./images/html_icon.png" alt="html">
+            <p>HTML</p>
+            <div class="prf_progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/css_icon.png" alt="css">
+            <p>CSS</p>
+            <div class="prf_progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/js_icon.png" alt="js">
+            <p>JAVASCRIPT</p>
+            <div class="prf_progress">
+              <div class="progress-bar4"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/jq_icon.png" alt="jq">
+            <p>JQEURY</p>
+            <div class="prf_progress">
+              <div class="progress-bar4"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/sass_icon.png" alt="sass">
+            <p>SASS</p>
+            <div class="prf_progress">
+              <div class="progress-bar3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="prf_program">
+          <div class="prf_ability">
+            <img src="./images/ps_icon.png" alt="ps">
+            <p>PHOTOSHOP</p>
+            <div class="prf_progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/ai_icon.png" alt="ai">
+            <p>ILLUSTRATOR</p>
+            <div class="prf_progress">
+              <div class="progress-bar2"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/figma_icon.png" alt="figma">
+            <p>FIGMA</p>
+            <div class="prf_progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/git_icon.png" alt="git">
+            <p>GIT</p>
+            <div class="prf_progress">
+              <div class="progress-bar3"></div>
+            </div>
+          </div>
+          <div class="prf_ability">
+            <img src="./images/rhino_icon.png" alt="rhino">
+            <p>RHINO</p>
+            <div class="prf_progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="pj">
+      <div class="pj_l"></div>
+      <p>project</p>
+    </div>
+
+    <section class="project_l">
+      <h2>project1</h2>
+      <article>
+        <div class="prj_l_img">
+          <a href="https://josooin.github.io/cgv/" title="cgv 홈페이지 바로가기"><img src="./images/project1_img.png"
+              alt="프로젝트1"></a>
+          <video class="hover-video" muted loop>
+            <source src="./videos/project1_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="prj_l_txt">
+          <h3>CGV</h3>
+          <p>CGV의 홈페이지 리뉴얼을 통해 영화 팬들에게 보다 직관적이고 편리한 온라인 영화 경험을 제공합니다. 최신 영화 정보를 확인하고 티켓을 예매하는 과정을 어디서나 쉽고 편리하게 만들었습니다.
+          </p>
+          <p><span>홈페이지 밀어서 잠금해제 <i class="fa-solid fa-angles-right"></i></span></p>
+          <div class="prj_l_unlock">
+            <div id="unlock1" class="unlock"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="project_r">
+      <h2>project2</h2>
+      <article>
+        <div class="prj_r_txt">
+          <h3>HARIM</h3>
+          <p>하림의 홈페이지 공식사이트를 클론코딩하였으며 반응형 홈페이지로 제작했습니다.
+          </p>
+          <p><span>홈페이지 밀어서 잠금해제 <i class="fa-solid fa-angles-right"></i></span></p>
+          <div class="prj_r_unlock">
+            <div id="unlock2" class="unlock"></div>
+          </div>
+        </div>
+        <div class="prj_r_img">
+          <a href="https://josooin.github.io/harim202312/" title="하림 홈페이지 바로가기"><img src="./images/project2_img.png"
+              alt="프로젝트3"></a>
+          <video class="hover-video" muted loop>
+            <source src="./videos/project2_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+    </section>
+
+    <section class="project_l">
+      <h2>project3</h2>
+      <article>
+        <div class="prj_l_img">
+          <a href="https://josooin.github.io/innisfree/" title="이니스프리 홈페이지 바로가기"><img src="./images/project3_img.png"
+              alt="프로젝트3"></a>
+          <video class="hover-video" muted loop>
+            <source src="./videos/project3_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="prj_l_txt">
+          <h3>INNISFREE</h3>
+          <p>기존의 이니스프리의 홈페이지를 적응형 홈페이지에서 반응형 홈페이지로 리뉴얼을 하여 사용자 디바이스에 맞게 구축하였습니다. 또한 사용자가 쉽게 찾고 사용할 수 있도록 아이콘과 메뉴를 직관적으로
+            배치했습니다.
+          </p>
+          <p><span>홈페이지 밀어서 잠금해제 <i class="fa-solid fa-angles-right"></i></span></p>
+          <div class="prj_l_unlock">
+            <div id="unlock3" class="unlock"></div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="project_r">
+      <h2>project4</h2>
+      <article>
+        <div class="prj_r_txt">
+          <h3>하림</h3>
+          <p>하림의 홈페이지 공식사이트를 클론코딩하였으며 반응형 홈페이지로 제작했습니다.
+          </p>
+          <p><span>홈페이지 밀어서 잠금해제 <i class="fa-solid fa-angles-right"></i></span></p>
+          <div class="prj_r_unlock">
+            <div id="unlock4" class="unlock"></div>
+          </div>
+        </div>
+        <div class="prj_r_img">
+          <a href="#" title="cgv 홈페이지 바로가기"><img src="./images/project2_img.png" alt="프로젝트3"></a>
+          <video class="hover-video" muted loop>
+            <source src="./videos/project2_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+    </section>
+
+    <!-- <section id="design">ui/ux design</section> -->
+
+    <!-- <section id="design">학습 목록?></section> -->
+
+
+    <section id="contact">
+      <h2>contact us & prologue</h2>
+      <article>
+        <h2>contact_img</h2>
+        <div class="contact_img">
+          <div class="flipper">
+            <div class="front">
+              <img src="./images/me2.png" alt="앞면 이미지">
+            </div>
+            <div class="back">
+              <img src="./images/me3.png" alt="뒷면 이미지">
+            </div>
+          </div>
+          <p class="contact_typing"></p>
+        </div>
+
+        <div class="contact_address">
+          <ul>
+            <li class="contact_ad_img"><a href="#"><img src="./images/github_img.png" alt=" 깃허브이미지"></a></li>
+            <li>Github</li>
+            <li class="contact_ad_direct">
+              <a href="https://github.com/josooin/josooin.git">josooin</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="contact_ad_img"><a href="#"><img src="./images/imsta_img.png" alt=" 인스타그램이미지"></a></li>
+            <li>Instagram</li>
+            <li class="contact_ad_direct">
+              <a href="https://www.instagram.com/josooin/">josooin</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="contact_ad_img"><a href="#"><img src="./images/phone_img.png" alt="전화이미지"></a></li>
+            <li>Number</li>
+            <li class="contact_ad_direct">
+              <a href="tel:+821082179409" title="전화걸기">+82
+                10-8217-9409</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="contact_ad_img"><a href="#"><img src="./images/mail_img.png" alt=" 메일이미지"></a></li>
+            <li>Mail</li>
+            <li class="contact_ad_direct">
+              <a href="mailto:Whtndls330@naver.com" title="메일보내기">Whtndls330@naver.com</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <p>이 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+      <br>해상도 1920*768px에 최적화되어 있으며 웹표준, 웹접근성을 준수합니다.
+    </p>
+    <address>copyright&copy;2024 allrights reserved.</address>
+  </footer>
+
+
+  <div id="follower"></div>
+
+  <!-- 스크립트 -->
+  <script src="./script/main.js"></script>
+</body>
+
+</html>
