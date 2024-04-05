@@ -338,10 +338,10 @@ $(document).ready(function () {
             window.location.href = 'https://josooin.github.io/cgv/'; // CGV 프로젝트 페이지로 이동
             break;
           case 'unlock2':
-            window.location.href = 'http://josooin1.dothome.co.kr/harim/index.html'; // 하림 프로젝트 페이지로 이동
+            window.location.href = 'https://josooin.github.io/harim/'; // 하림 프로젝트 페이지로 이동
             break;
           case 'unlock3':
-            window.location.href = 'http://josooin1.dothome.co.kr/innisfree/index.html'; // 이니스프리 프로젝트 페이지로 이동
+            window.location.href = 'https://josooin.github.io/innisfree/'; // 이니스프리 프로젝트 페이지로 이동
             break;
           case 'unlock4':
             // 여기에 unlock4의 목적지 URL을 추가
