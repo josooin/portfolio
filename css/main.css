@@ -1,0 +1,690 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  width: 100%;
+}
+
+header h1 {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 3%;
+  top: 2%;
+  background: #666;
+}
+
+#intro {
+  height: 100vh;
+}
+
+#intro h2 {
+  width: 100%;
+  color: #fff;
+  font-size: 18rem;
+  font-weight: 700;
+  line-height: 270px;
+  letter-spacing: -10px;
+  font-family: "Montserrat";
+  position: absolute;
+  top: 0%;
+  left: 910px;
+  transform: translate(-50%, -50%);
+}
+
+#intro > h3,
+h4 {
+  top: 350px;
+  position: absolute;
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Pretendard";
+}
+
+#intro > hr {
+  top: 360px;
+  height: 5px;
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+
+.int_profile {
+  width: 250px;
+  top: 700px;
+  left: -15%;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.int_profile p {
+  margin: 10px 0px;
+  color: rgb(255, 0, 0);
+}
+
+.int_profile p:first-child {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Pretendard";
+}
+
+.int_profile p:nth-child(2) {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.int_profile hr {
+  background-color: rgb(255, 0, 0);
+  height: 2px;
+  border: none;
+  width: 250px !important;
+}
+
+.int_profile p:last-child {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.scroll_btn {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  animation: icon_ani infinite 1s;
+  cursor: pointer;
+}
+
+.scroll_btn img {
+  width: 25px;
+  padding-bottom: 10px;
+}
+
+.datentime {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-align: right;
+  padding: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.gnb {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.gnb ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gnb ul li {
+  margin: 20px 20px 0px;
+}
+
+.gnb ul li a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.gnb ul li a:hover {
+  transform: scale(1.2);
+  background: rgb(255, 0, 0);
+}
+
+.act {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  height: 50px;
+}
+
+.act2 {
+  animation: indicator 1s infinite !important;
+}
+
+@keyframes indicator {
+  0% {
+    background: rgb(255, 255, 255);
+  }
+  50% {
+    background: rgb(255, 0, 0);
+  }
+  100% {
+    background: rgb(255, 255, 255);
+  }
+}
+.ani02 {
+  animation: icon_ani infinite 5s;
+}
+
+@keyframes icon_ani {
+  0% {
+    bottom: 7%;
+  }
+  50% {
+    bottom: 6%;
+  }
+  100% {
+    bottom: 7%;
+  }
+}
+main h2 {
+  display: none;
+}
+
+section {
+  padding: 100px 0px;
+  border-top: 1px solid #666;
+}
+
+#profile {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+#profile {
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+#profile > h2 {
+  display: none;
+}
+
+.cover {
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.cover:first-child {
+  margin-top: 10vh;
+}
+
+.first-parallel {
+  font-size: 8rem !important;
+  padding: 50px 0px !important;
+}
+
+.cover:nth-child(2) {
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.cover:nth-child(3) {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.cover:nth-child(4) {
+  justify-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+.cover > p {
+  display: flex;
+  padding: 2rem 0;
+  font-size: 4rem;
+  white-space: nowrap;
+  line-height: 60px;
+  margin: 0;
+  /* 추가된 부분 */
+  word-spacing: -10px;
+}
+
+#profile article {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  padding: 50px 0px;
+}
+
+.prf_img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  perspective: 5000px;
+}
+
+.prf_img img {
+  width: 300px;
+}
+
+.flipper {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  width: 200px;
+  /* Adjust as needed */
+  height: 200px;
+  /* Adjust as needed */
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#prf_txt {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  padding: 55px 0px 0px 250px;
+}
+
+#profile article:last-child {
+  padding-top: 10vh;
+}
+
+.prf_d_lng,
+.prf_program {
+  width: 40%;
+  margin: 0px 5%;
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  /* 약간 아래에서 위로 올라오는 효과를 줍니다 */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.prf_ability {
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 15px;
+}
+
+.prf_ability img {
+  width: 30px;
+}
+
+.prf_ability p {
+  width: 250px;
+  margin-left: 30px;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.prf_progress {
+  width: 300px;
+  height: 5px;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 0;
+}
+
+.progress-bar2 {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 0;
+}
+
+.progress-bar3 {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 0;
+}
+
+.progress-bar4 {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 0;
+}
+
+@keyframes increaseAni1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes increaseAni2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes increaseAni3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes increaseAni4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+/* 나타난 후 애니메이션 실행을 위한 클래스 */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* .progress-bar 애니메이션 */
+.animate-width {
+  animation: increaseAni1 3s ease-in-out 1s forwards;
+}
+
+.animate-width2 {
+  animation: increaseAni2 3s ease-in-out 1s forwards;
+}
+
+.animate-width3 {
+  animation: increaseAni3 3s ease-in-out 1s forwards;
+}
+
+.animate-width4 {
+  animation: increaseAni4 3s ease-in-out 1s forwards;
+}
+
+.pj {
+  width: 100%;
+  height: 800px;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+}
+
+.pj_l {
+  width: 1px;
+  height: 300px;
+  left: 50%;
+  background: #666;
+  position: absolute;
+}
+
+.pj p {
+  position: absolute;
+  left: 40%;
+  bottom: 0px;
+  font-size: 7rem;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  padding: 200px 0px;
+}
+
+.project_l,
+.project_r {
+  width: 90%;
+  margin: 0px 5%;
+}
+
+.project_l article,
+.project_r article {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.prj_l_img,
+.prj_r_img {
+  top: 0px;
+  position: absolute;
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.prj_l_img {
+  left: 50px;
+}
+
+.prj_r_img {
+  right: 50px;
+}
+
+.prj_r_img > img,
+.prj_l_img > img {
+  width: 100%;
+  height: auto;
+}
+
+.hover-video {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  transform: scale(1);
+  opacity: 0;
+  z-index: 9999;
+  transform: translate(0%, -100px);
+}
+
+.prj_l_img > .hover-video {
+  left: 0;
+}
+
+.prj_r_img > .hover-video {
+  right: 0;
+}
+
+.prj_l_txt,
+.prj_r_txt {
+  width: 500px;
+  position: absolute;
+}
+
+.prj_l_txt {
+  margin: 150px 50px 0px 0px;
+  right: 0px;
+}
+
+.prj_r_txt {
+  margin: 150px 0px 0px 50px;
+  left: 0px;
+}
+
+.prj_l_txt h3,
+.prj_r_txt h3 {
+  font-size: 3rem;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.prj_l_txt p,
+.prj_r_txt p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.prj_l_txt p span,
+.prj_r_txt p span {
+  font-size: 1rem;
+}
+
+.prj_l_unlock,
+.prj_r_unlock {
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 30px;
+}
+
+.unlock {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#contact > h2 {
+  display: block;
+  font-size: 7rem;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 300px 0px;
+}
+
+.contact_img {
+  width: 1400px;
+  height: 300px;
+  display: flex;
+  margin: 0px auto;
+  position: relative;
+  padding-bottom: 200px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  perspective: 5000px;
+}
+
+.contact_img img {
+  width: 300px;
+}
+
+.contact_img .flipper {
+  position: absolute;
+}
+
+.contact_typing {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 900px;
+  height: 300px;
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.visible2 {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.contact_address {
+  font-size: 2rem;
+  line-height: 50px;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: space-between;
+  display: flex;
+}
+
+.contact_ad_img {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  padding: 30px 0 !important;
+  margin-top: 50px;
+}
+
+.contact_ad_img a {
+  position: absolute;
+  left: 120px;
+}
+
+.contact_ad_img img {
+  width: 60px;
+}
+
+.contact_address li {
+  align-items: center;
+  width: 300px;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Pretendard";
+  position: relative;
+}
+
+.contact_ad_direct a {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.contact_ad_direct a:hover {
+  color: rgb(255, 0, 0);
+  background: #fff;
+  border-radius: 30px;
+}
+
+footer {
+  color: #fff;
+  background: #333;
+  text-align: center;
+  line-height: 50px;
+  font-style: normal;
+}/*# sourceMappingURL=main.css.map */
