@@ -32,15 +32,15 @@ $(document).ready(function () {
 
 
   // 제목 날아오게 하기
-  $('#intro h2').animate({ 'top': '230px' }, 500, 'swing');
+  $('#intro h2').animate({ 'top': '30%' }, 500, 'swing');
 
   // $('#intro h3').animate({'right':'0%'}, 1000, 'swing');
-  $('#intro h3').css({ 'left': '100px' }).hide().fadeIn(2000, 'swing');
-  $('#intro hr').css({ 'left': '280px', 'width': '0%' });
+  $('#intro h3').css({ 'left': '5%' }).hide().fadeIn(2000, 'swing');
+  $('#intro hr').css({ 'left': '17%', 'width': '0%' });
   setTimeout(function () {
-    $('#intro hr').animate({ 'width': '1200px' }, 3000, 'swing');
+    $('#intro hr').animate({ 'width': '65%' }, 3000, 'swing');
   }, 500);
-  $('#intro h4').css({ 'left': '1520px' }).hide().fadeIn(3000, 'swing');
+  $('#intro h4').css({ 'left': '85%' }).hide().fadeIn(3000, 'swing');
   setTimeout(function () {
     $('#intro h4').hide().fadeIn(2000, 'swing');
   }, 500);

@@ -33,14 +33,14 @@ header h1 {
 #intro h2 {
   width: 100%;
   color: #fff;
-  font-size: 18rem;
+  font-size: 15rem;
   font-weight: 700;
   line-height: 270px;
   letter-spacing: -10px;
   font-family: "Montserrat";
   position: absolute;
   top: 0%;
-  left: 910px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -66,8 +66,8 @@ h4 {
 
 .int_profile {
   width: 250px;
-  top: 700px;
-  left: -15%;
+  bottom: 5%;
+  left: -20%;
   position: absolute;
   font-size: 1.2rem;
   font-weight: bold;
@@ -585,6 +585,23 @@ section {
   line-height: 50px;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.fa-desktop, .fa-mobile-screen-button {
+  font-size: 4rem;
+}
+
+.fa-solid:hover {
+  color: rgb(255, 0, 0);
+}
+
+.via_page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.via_page a {
+  text-align: center;
 }
 
 #contact > h2 {
